@@ -243,7 +243,7 @@ BVARTVP.default <- function(mydata,timelab=NULL,coefprior=NULL,tau=NULL,p=4,irf.
   #
   #
   #
-  QSortIndex <- matrix(1,ncol=3,nrow=K/M)
+  QSortIndex <- matrix(1,ncol=M,nrow=K/M)
   for(i in 1:M){
     QSortIndex[,i] <- QSortIndex[,i] + (i-1)
   }
